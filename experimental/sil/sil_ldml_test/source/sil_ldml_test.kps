@@ -25,13 +25,13 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\ldml_test.kmx</Name>
+      <Name>..\build\sil_ldml_test.kmx</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\ldml_test.kvk</Name>
+      <Name>..\build\sil_ldml_test.kvk</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
@@ -58,7 +58,7 @@
   <Keyboards>
     <Keyboard>
       <Name>LDML Test</Name>
-      <ID>ldml_test</ID>
+      <ID>sil_ldml_test</ID>
       <Version>1.0.0</Version>
       <Languages>
         <Language ID="en">English</Language>
