@@ -17,10 +17,10 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">LDML Test</Name>
-    <Copyright URL="">Copyright © Steven R. Loomis</Copyright>
+    <Name URL="">SIL LDML Test</Name>
+    <Copyright URL="">Copyright © SIL International</Copyright>
     <Author URL="">Steven R. Loomis</Author>
-    <Description URL="">Test Keyboard</Description>
+    <Description URL="">This is a test keyboard which demonstrates some of the features of the LDML Keyboard format. It is not intended for normal typing use.</Description>
     <Version URL=""></Version>
   </Info>
   <Files>

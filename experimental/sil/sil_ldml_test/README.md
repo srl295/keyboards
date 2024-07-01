@@ -9,6 +9,8 @@ Test Keyboard for LDML
 Trying it Out
 -------------
 
+See [welcome.htm](./source/welcome.htm) for detailed instructions on testing the keyboard out.
+
 This section describes how to test the keyboard. For example, typing <kbd>1</kbd> will produce `1:basic:OK`. Following these steps in order will make sure the keyboard (and the implementation) is working properly.
 
 Each of the steps produces output ending in `:OK`.  You can press <kbd>enter</kbd> in between steps to put the output on separate lines.

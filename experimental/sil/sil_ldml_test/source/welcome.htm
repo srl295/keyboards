@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Start Using LDML Test</title>
+  <title>Start Using SIL LDML Test</title>
   <style type="text/css">
     p { font: 10pt Tahoma; }
     h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
@@ -15,8 +15,74 @@
 <h1>Start Using LDML Test</h1>
 
 <p>
-  Test Keyboard
+  SIL LDML Test Keyboard
 </p>
+
+<h1>Testing</h1>
+
+
+<p>This section describes how to test the keyboard. For example, typing <kbd>1</kbd> will produce <code>1:basic:OK</code>. Following these steps in order will make sure the keyboard (and the implementation) is working properly.</p>
+<p>Each of the steps produces output ending in <code>:OK</code>.  You can press <kbd>enter</kbd> in between steps to put the output on separate lines.</p>
+<h3>Direct key output</h3>
+<ol>
+<li>Press: <kbd>1</kbd></li>
+<li>Check: <code>1:basic:OK</code></li>
+</ol>
+<h3>A simple transform</h3>
+<ol>
+<li>Press: <kbd>2</kbd></li>
+<li>Check: <code>2:simple_transform:OK</code></li>
+</ol>
+<h3>Marker transform</h3>
+<ol>
+<li>Press: <kbd>3</kbd></li>
+<li>Check: <code>3:simple_marker:OK</code></li>
+</ol>
+<h3>Simple reorder</h3>
+<ol>
+<li>Press: <kbd>4</kbd></li>
+<li>Check: <code>4:simple_reorder:OK</code></li>
+</ol>
+<h3>Variable substitution</h3>
+<ol>
+<li>Press: <kbd>5</kbd></li>
+<li>Check: <code>5:simple_vars:OK</code></li>
+</ol>
+<h3>Mapped variable substitution</h3>
+<ol>
+<li>Press: <kbd>6</kbd></li>
+<li>Check: <code>6:map_var:OK</code></li>
+</ol>
+<h3>Uset subtitution</h3>
+<ol>
+<li>Press: <kbd>7</kbd></li>
+<li>Check: <code>7:simple_uset:OK</code></li>
+</ol>
+<h3>Context</h3>
+<ol>
+<li>Type or paste in: <code>ABC</code> and position the cursor after that text</li>
+<li>Type: <kbd>8</kbd></li>
+<li>Check: <code>8:ctxt:OK</code></li>
+</ol>
+<h3>Non-BMP Context</h3>
+<ol>
+<li>Paste in: <code>𐓏</code> and position the cursor after that text</li>
+<li>Type: <kbd>8</kbd></li>
+<li>Check: <code>8:ctxt:OK</code></li>
+</ol>
+<h3>Two-part Non-BMP Context</h3>
+<ol>
+<li>Paste in: <code>𐒻</code> and position the cursor after that text</li>
+<li>Type: <kbd>Shift</kbd><kbd>8</kbd></li>
+<li>Type: <kbd>8</kbd></li>
+<li>Check: <code>8:ctxt:OK</code></li>
+</ol>
+<h3>Two-part Marker Test</h3>
+<ol>
+<li>Type: <kbd>9</kbd> (you will see FAIL temporarily, but continue to the next step)</li>
+<li>Type: <kbd>Shift</kbd><kbd>9</kbd></li>
+<li>Check: <code>9:split_marker:OK</code></li>
+</ol>
 
 <h1>Keyboard Layout</h1>
 
@@ -24,3 +90,4 @@
 
 </body>
 </html>
+
